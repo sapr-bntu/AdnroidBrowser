@@ -1,74 +1,867 @@
-<!DOCTYPE html>
-<html>
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Adnroidbrowser : " />
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<link rel=File-List href="Android%20Browser%20Testing.files/filelist.xml">
+<link rel=Edit-Time-Data href="Android%20Browser%20Testing.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Dmitri</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>OLGA</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>50</o:TotalTime>
+  <o:Created>2012-05-08T19:08:00Z</o:Created>
+  <o:LastSaved>2012-05-08T19:08:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>272</o:Words>
+  <o:Characters>1556</o:Characters>
+  <o:Lines>12</o:Lines>
+  <o:Paragraphs>3</o:Paragraphs>
+  <o:CharactersWithSpaces>1825</o:CharactersWithSpaces>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=themeData href="Android%20Browser%20Testing.files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="Android%20Browser%20Testing.files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>80</w:Zoom>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>RU</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520092929 1073786111 9 0 415 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Текст выноски Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-bidi-font-family:Tahoma;
+	mso-fareast-language:EN-US;}
+span.a
+	{mso-style-name:"Текст выноски Знак";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Текст выноски";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:10.0pt;
+	mso-para-margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<body lang=RU style='tab-interval:35.4pt'>
 
-    <title>Adnroidbrowser</title>
-  </head>
+<div class=WordSection1>
 
-  <body>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Вид
+эмулятора </span><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif";
+mso-ansi-language:EN-US'>Android</span><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'> с установленными а нем программами
+представлен на рисунке 1:<o:p></o:p></span></p>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/sapr-bntu/AdnroidBrowser">View on GitHub</a>
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif";mso-fareast-language:RU;mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1040" type="#_x0000_t75" style='width:462.75pt;
+ height:285.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Android%20Browser%20Testing.files/image001.png" o:title=""
+  croptop="2379f" cropbottom="2811f" cropleft="6827f" cropright="5708f"/>
+</v:shape><![endif]--><![if !vml]><img width=617 height=381
+src="Android%20Browser%20Testing.files/image002.jpg" v:shapes="_x0000_i1040"><![endif]></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
 
-          <h1 id="project_title">Adnroidbrowser</h1>
-          <h2 id="project_tagline"></h2>
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>Рисунок 1<o:p></o:p></span></p>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/sapr-bntu/AdnroidBrowser/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/sapr-bntu/AdnroidBrowser/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>На
+рисунке 2 изображен общий вид разработанного на </span><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif";mso-ansi-language:
+EN-US'>Qt</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+браузера.<o:p></o:p></span></p>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif";mso-fareast-language:RU;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1039" type="#_x0000_t75" style='width:468pt;height:284.25pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Android%20Browser%20Testing.files/image003.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=624 height=379
+src="Android%20Browser%20Testing.files/image004.jpg" v:shapes="_x0000_i1039"><![endif]></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>Рисунок 2<o:p></o:p></span></p>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
 
-<h3>Designer Templates</h3>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
 
-<h3>Rather Drive Stick?</h3>
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:18.0pt;font-family:"Times New Roman","serif"'>Тестирование
+программного продукта<o:p></o:p></span></b></p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
 
-<h3>Authors and Contributors</h3>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'><span style='font-size:16.0pt;font-family:
+"Times New Roman","serif"'>Тестирование </span></i></b><b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'><span lang=EN-US
+style='font-size:16.0pt;font-family:"Times New Roman","serif";mso-ansi-language:
+EN-US'>LineEdit</span></i></b><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'><span style='font-size:16.0pt;font-family:
+"Times New Roman","serif"'><o:p></o:p></span></i></b></p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Строка<span
+style='mso-spacerun:yes'>  </span></span><span lang=EN-US style='font-size:
+14.0pt;font-family:"Times New Roman","serif";mso-ansi-language:EN-US'>URL</span><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'> </span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>отображается
+правильно, но как видно из рисунка 3, не происходит масштабирование
+пользовательских элементов формы, что приводит к тому, что после подгонки
+размера текста в </span><span lang=EN-US style='font-size:14.0pt;font-family:
+"Times New Roman","serif";mso-ansi-language:EN-US'>LineEdit</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> текст сверху и
+снизу обрезается. <o:p></o:p></span></p>
 
-<h3>Support or Contact</h3>
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif";mso-fareast-language:RU;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1038" type="#_x0000_t75" style='width:442.5pt;height:22.5pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Android%20Browser%20Testing.files/image005.png" o:title=""
+  croptop="10669f" cropbottom="12192f" cropleft="729f"/>
+</v:shape><![endif]--><![if !vml]><img width=590 height=30
+src="Android%20Browser%20Testing.files/image006.jpg" v:shapes="_x0000_i1038"><![endif]></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and weвЂ™ll help you sort it out.</p>
-      </section>
-    </div>
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>Рисунок 3<o:p></o:p></span></p>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Adnroidbrowser maintained by <a href="https://github.com/sapr-bntu">sapr-bntu</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
 
-    
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'><span style='font-size:16.0pt;font-family:"Times New Roman","serif"'>Тестирование
+кнопок пользовательской формы</span></i></b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
 
-  </body>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Кнопка
+</span><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif";
+mso-ansi-language:EN-US'>BACK</span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>(</span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif";mso-fareast-language:RU;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Рисунок_x0020_10" o:spid="_x0000_i1037" type="#_x0000_t75" style='width:18.75pt;
+ height:13.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Android%20Browser%20Testing.files/image007.png" o:title=""
+  croptop="5958f" cropbottom="8936f" cropleft="5822f" cropright="5620f"/>
+</v:shape><![endif]--><![if !vml]><img width=25 height=18
+src="Android%20Browser%20Testing.files/image008.jpg" v:shapes="Рисунок_x0020_10"><![endif]></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>)</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif";mso-ansi-language:
+EN-US'> </span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>работает
+<span style='background:lime;mso-highlight:lime'>корректно</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Кнопка
+</span><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif";
+mso-ansi-language:EN-US'>FORWARD</span><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>(</span><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";mso-fareast-language:RU;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="Рисунок_x0020_13" o:spid="_x0000_i1036"
+ type="#_x0000_t75" style='width:19.5pt;height:13.5pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="Android%20Browser%20Testing.files/image009.png" o:title=""
+  croptop="6144f" cropbottom=".125" cropleft="7577f" cropright="6759f"/>
+</v:shape><![endif]--><![if !vml]><img width=26 height=18
+src="Android%20Browser%20Testing.files/image010.jpg" v:shapes="Рисунок_x0020_13"><![endif]></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>) работает <span
+style='background:lime;mso-highlight:lime'>корректно</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Кнопка
+</span><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif";
+mso-ansi-language:EN-US'>RELOAD</span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>(</span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif";mso-fareast-language:RU;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Рисунок_x0020_16" o:spid="_x0000_i1035" type="#_x0000_t75" style='width:19.5pt;
+ height:14.25pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Android%20Browser%20Testing.files/image011.png" o:title=""
+  croptop="8548f" cropbottom="7598f" cropleft="4290f" cropright="6155f"/>
+</v:shape><![endif]--><![if !vml]><img width=26 height=19
+src="Android%20Browser%20Testing.files/image012.jpg" v:shapes="Рисунок_x0020_16"><![endif]></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>) работает <span
+style='background:lime;mso-highlight:lime'>корректно</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Кнопка
+</span><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif";
+mso-ansi-language:EN-US'>STOP</span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>(</span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif";mso-fareast-language:RU;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Рисунок_x0020_19" o:spid="_x0000_i1034" type="#_x0000_t75" style='width:13.5pt;
+ height:13.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Android%20Browser%20Testing.files/image013.png" o:title=""
+  croptop="11076f" cropbottom="8307f" cropleft="7385f"/>
+</v:shape><![endif]--><![if !vml]><img width=18 height=18
+src="Android%20Browser%20Testing.files/image014.jpg" v:shapes="Рисунок_x0020_19"><![endif]></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>) работает <span
+style='background:lime;mso-highlight:lime'>корректно</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'><span style='font-size:16.0pt;font-family:"Times New Roman","serif"'>Тестирование
+меню пользовательской формы</span></i></b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Общий
+вид окна с развернутым меню представлен на рисунке 4:<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif";mso-fareast-language:RU;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Рисунок_x0020_22" o:spid="_x0000_i1033" type="#_x0000_t75" alt="Описание: C:\Users\Dmitri\AppData\Local\Temp\SNAGHTML1ed604.PNG"
+ style='width:420pt;height:256.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Android%20Browser%20Testing.files/image015.png" o:title="SNAGHTML1ed604"
+  croptop="6242f" cropright="6723f"/>
+</v:shape><![endif]--><![if !vml]><img width=560 height=342
+src="Android%20Browser%20Testing.files/image016.gif"
+alt="Описание: C:\Users\Dmitri\AppData\Local\Temp\SNAGHTML1ed604.PNG" v:shapes="Рисунок_x0020_22"><![endif]></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>Рисунок 4<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Элемент
+меню </span><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif";
+mso-ansi-language:EN-US'>BACK</span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>(</span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif";mso-fareast-language:RU;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Рисунок_x0020_1" o:spid="_x0000_i1032" type="#_x0000_t75" style='width:28.5pt;
+ height:12.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Android%20Browser%20Testing.files/image017.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=38 height=17
+src="Android%20Browser%20Testing.files/image018.jpg" v:shapes="Рисунок_x0020_1"><![endif]></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>) работает <span
+style='background:lime;mso-highlight:lime'>корректно</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Элемент
+меню </span><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif";
+mso-ansi-language:EN-US'>FORWARD</span><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>(</span><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif";mso-fareast-language:RU;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="Рисунок_x0020_2" o:spid="_x0000_i1031"
+ type="#_x0000_t75" style='width:36.75pt;height:12.75pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="Android%20Browser%20Testing.files/image019.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=49 height=17
+src="Android%20Browser%20Testing.files/image020.jpg" v:shapes="Рисунок_x0020_2"><![endif]></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>) работает <span
+style='background:lime;mso-highlight:lime'>корректно</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Элемент
+меню </span><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif";
+mso-ansi-language:EN-US'>RELOAD</span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>(</span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif";mso-fareast-language:RU;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Рисунок_x0020_3" o:spid="_x0000_i1030" type="#_x0000_t75" style='width:37.5pt;
+ height:12.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Android%20Browser%20Testing.files/image021.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=50 height=17
+src="Android%20Browser%20Testing.files/image022.jpg" v:shapes="Рисунок_x0020_3"><![endif]></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>) работает <span
+style='background:lime;mso-highlight:lime'>корректно</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Элемент
+меню </span><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif";
+mso-ansi-language:EN-US'>STOP</span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>(</span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif";mso-fareast-language:RU;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Рисунок_x0020_4" o:spid="_x0000_i1029" type="#_x0000_t75" style='width:24.75pt;
+ height:12pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Android%20Browser%20Testing.files/image023.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=33 height=16
+src="Android%20Browser%20Testing.files/image024.jpg" v:shapes="Рисунок_x0020_4"><![endif]></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>) работает <span
+style='background:lime;mso-highlight:lime'>корректно</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Элементы
+меню </span><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif";
+mso-ansi-language:EN-US'>SAVE</span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'> (</span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif";mso-fareast-language:RU;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Рисунок_x0020_6" o:spid="_x0000_i1028" type="#_x0000_t75" style='width:27.75pt;
+ height:11.25pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Android%20Browser%20Testing.files/image025.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=37 height=15
+src="Android%20Browser%20Testing.files/image026.jpg" v:shapes="Рисунок_x0020_6"><![endif]></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>) и </span><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif";
+mso-ansi-language:EN-US'>OPEN</span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>(</span><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif";mso-fareast-language:RU;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Рисунок_x0020_7" o:spid="_x0000_i1027" type="#_x0000_t75" style='width:27pt;
+ height:11.25pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Android%20Browser%20Testing.files/image027.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=36 height=15
+src="Android%20Browser%20Testing.files/image028.jpg" v:shapes="Рисунок_x0020_7"><![endif]></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>) работают <span
+style='background:red;mso-highlight:red'>некорректно</span>: была осуществлена
+попытка сохранить загруженную страницу в папку “</span><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif";mso-ansi-language:
+EN-US'>sdcard</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>”
+(при выборе пункта меню </span><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif";mso-ansi-language:EN-US'>SAVE</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> появляется
+диалоговое окно, представленное на рисунке 5).<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif";mso-fareast-language:RU;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Рисунок_x0020_5" o:spid="_x0000_i1026" type="#_x0000_t75" alt="Описание: C:\Users\Dmitri\Desktop\screen\2.png"
+ style='width:317.25pt;height:192pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Android%20Browser%20Testing.files/image029.png" o:title="2"/>
+</v:shape><![endif]--><![if !vml]><img width=423 height=256
+src="Android%20Browser%20Testing.files/image030.gif"
+alt="Описание: C:\Users\Dmitri\Desktop\screen\2.png" v:shapes="Рисунок_x0020_5"><![endif]></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>Рисунок 5<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>После
+этого при выборе пункта меню </span><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif";mso-ansi-language:EN-US'>OPEN</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> появилось
+диалоговое окно, представленное на рисунке 6.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif";mso-fareast-language:RU;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Рисунок_x0020_25" o:spid="_x0000_i1025" type="#_x0000_t75" alt="Описание: C:\Users\Dmitri\AppData\Local\Temp\SNAGHTML1ffb30.PNG"
+ style='width:315.75pt;height:172.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Android%20Browser%20Testing.files/image031.png" o:title="SNAGHTML1ffb30"
+  croptop="8119f" cropbottom="4833f" cropleft="7145f" cropright="6059f"/>
+</v:shape><![endif]--><![if !vml]><img width=421 height=230
+src="Android%20Browser%20Testing.files/image032.gif"
+alt="Описание: C:\Users\Dmitri\AppData\Local\Temp\SNAGHTML1ffb30.PNG" v:shapes="Рисунок_x0020_25"><![endif]></span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman","serif"'>Рисунок 6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Однако
+при открытии папки “</span><span lang=EN-US style='font-size:14.0pt;font-family:
+"Times New Roman","serif";mso-ansi-language:EN-US'>sdcard</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>” не была
+обнаружена сохраненная на предыдущем этапе страница. Возможная ошибка: страница
+после сохранения не имеет расширение .</span><span lang=EN-US style='font-size:
+14.0pt;font-family:"Times New Roman","serif";mso-ansi-language:EN-US'>html</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, а данная среда
+позволяет открыть только </span><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman","serif";mso-ansi-language:EN-US'>html</span><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'> документы.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'><span style='font-size:16.0pt;font-family:"Times New Roman","serif"'>Тестирование
+корректности работы базы данных<o:p></o:p></span></i></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>База
+данных работает <span style='background:red;mso-highlight:red'>некорректно</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>При
+загрузке проекта оказалось, что база данных не может быть открыта. Возможная
+ошибка: при компиляции и загрузке проекта на эмулятор </span><span lang=EN-US
+style='font-size:14.0pt;font-family:"Times New Roman","serif";mso-ansi-language:
+EN-US'>Android</span><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>
+база данных не была подгружена; нет соответствующих драйверов для корректной
+работы базы данных.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
 </html>
